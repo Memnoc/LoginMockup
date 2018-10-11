@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.UserInfoActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/welcomeMessageResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Header" />
+
+    <TextView
+        android:id="@+id/userNameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeMessageResult"
+        app:layout_constraintStart_toStartOf="@+id/welcomeMessageResult"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessageResult"
+        tools:text="username" />
+
+    <TextView
+        android:id="@+id/userLastNameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameResult"
+        app:layout_constraintStart_toStartOf="@+id/userNameResult"
+        app:layout_constraintTop_toBottomOf="@+id/userNameResult"
+        tools:text="lastname" />
+
+    <TextView
+        android:id="@+id/userGenderResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userLastNameResult"
+        app:layout_constraintStart_toStartOf="@+id/userLastNameResult"
+        app:layout_constraintTop_toBottomOf="@+id/userLastNameResult"
+        tools:text="gender" />
+
+    <TextView
+        android:id="@+id/userAgeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userGenderResult"
+        app:layout_constraintStart_toStartOf="@+id/userGenderResult"
+        app:layout_constraintTop_toBottomOf="@+id/userGenderResult"
+        tools:text="age" />
+</android.support.constraint.ConstraintLayout>
