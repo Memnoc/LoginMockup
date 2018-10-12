@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Login Mockup</string>
+    <string name="login_page">Login Page:</string>
+    <string name="username">username</string>
+    <string name="sign_in">sign in</string>
+    <string name="gender">gender</string>
+    <string name="age">age</string>
+    <string name="surname">surname</string>
 </resources>

@@ -8,21 +8,23 @@ public class User implements Parcelable {
     private String firstName;
     private String lastName;
     private String gender;
+    private String age;
+    private String password;
 
-    private int age;
-
-    public User(String firstName, String lastName, String gender, int age) {
+    public User(String firstName, String lastName, String gender, String age, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.age = age;
+        this.password = password;
     }
 
     protected User(Parcel in) {
         firstName = in.readString();
         lastName = in.readString();
         gender = in.readString();
-        age = in.readInt();
+        age = in.readString();
+        password = in.readString();
     }
 
     public static final Creator<User> CREATOR = new Creator<User>() {
@@ -41,16 +43,8 @@ public class User implements Parcelable {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getLastName() {
         return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String getGender() {
@@ -61,11 +55,11 @@ public class User implements Parcelable {
         this.gender = gender;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -79,6 +73,6 @@ public class User implements Parcelable {
         dest.writeString(firstName);
         dest.writeString(lastName);
         dest.writeString(gender);
-        dest.writeInt(age);
+        dest.writeString(age);
     }
 }
